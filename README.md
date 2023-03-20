@@ -5,7 +5,7 @@ Competition American Express
 https://www.kaggle.com/competitions/amex-default-prediction/overview/description
 
 # Решение
-## Предобработка данных:
+## Предобработка данных
 ### Избавление от шумов 
 &nbsp;&nbsp;&nbsp;&nbsp;Ноутбуки amex-data-int-types-train и amex-data-int-types-test предназначены для избавления от шумов.
   
@@ -18,7 +18,7 @@ https://www.kaggle.com/competitions/amex-default-prediction/overview/description
 ### Категориальные признаки
 &nbsp;&nbsp;&nbsp;&nbsp;Информация о категориальных признаках закодирована с помощью target encoding.
 
-# Обучение моделей
+## Обучение моделей
 &nbsp;&nbsp;&nbsp;&nbsp;Ноутбуки create_models.ipynb и predict-test.ipynb для создания моделей и предсказания. 
 Итоговое решение основано на стекинге, есть три пула моделей. Первый пул состоит из моделей логистической регрессии, которе предсказывают на основе временных рядых, состоящих из одного признака за несколько месяцев. Kоличество этих моделей равно количеству признаков. Второй пул состоит из CatBoostClassifier, которые предсказывают результат на основе одной записи пользователя. Количество этих моделей 13, как количество записей о пользователях. Модель, принимающая результаты двух пулов, CatBoostClassifier.
 

@@ -4,8 +4,7 @@ Competition American Express
 https://www.kaggle.com/competitions/amex-default-prediction/overview/description
 
 # Решение
-## Предобработка данных:
-  ### Избавление от шумов 
+
   
     Ноутбуки и предназначены для избавления от шумов.
   
